@@ -49,7 +49,7 @@ app.use(passport.session());
 // app.use('/', viewsRouter);
 app.use('/api/products', productsRouter);
 app.use('/api/carts', cartsRouter);
-app.use('api/auth', SessionRouter);
+app.use('/api/auth', SessionRouter);
 
 await dbConnection();
 
